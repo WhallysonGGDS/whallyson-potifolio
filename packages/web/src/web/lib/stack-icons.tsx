@@ -1,0 +1,81 @@
+import type { IconType } from "react-icons";
+import {
+  SiCanva,
+  SiCss,
+  SiDrizzle,
+  SiFigma,
+  SiGit,
+  SiGithub,
+  SiGreensock,
+  SiHtml5,
+  SiJavascript,
+  SiLucide,
+  SiNextdotjs,
+  SiPostgresql,
+  SiReact,
+  SiSharp,
+  SiShadcnui,
+  SiSupabase,
+  SiSwr,
+  SiTailwindcss,
+  SiThreedotjs,
+  SiTypescript,
+  SiVercel,
+} from "react-icons/si";
+
+/**
+ * Maps a stack label to its real brand icon when one exists in Simple Icons.
+ * Tools without an accurate mark (Base UI, Better Auth, Analytics, Blob,
+ * Motion, ScrollTrigger, Higgsfield) intentionally render as text only —
+ * never a wrong or generic substitute icon.
+ */
+export const stackIconMap: Record<string, IconType> = {
+  "Next.js": SiNextdotjs,
+  React: SiReact,
+  TypeScript: SiTypescript,
+  JavaScript: SiJavascript,
+  "Tailwind CSS": SiTailwindcss,
+  HTML5: SiHtml5,
+  CSS3: SiCss,
+  "shadcn/ui": SiShadcnui,
+  "Lucide React": SiLucide,
+  GSAP: SiGreensock,
+  "@gsap/react": SiGreensock,
+  "Three.js": SiThreedotjs,
+  Supabase: SiSupabase,
+  PostgreSQL: SiPostgresql,
+  "Drizzle ORM": SiDrizzle,
+  Vercel: SiVercel,
+  Sharp: SiSharp,
+  SWR: SiSwr,
+  Git: SiGit,
+  GitHub: SiGithub,
+  Figma: SiFigma,
+  Canva: SiCanva,
+};
+
+/** Each brand's real mark color (from Simple Icons), used at low opacity on chips so hover feels like a reveal, not a rainbow wall. */
+export const stackIconColor: Record<string, string> = {
+  "Next.js": "#FFFFFF",
+  React: "#61DAFB",
+  TypeScript: "#3178C6",
+  JavaScript: "#F7DF1E",
+  "Tailwind CSS": "#38BDF8",
+  HTML5: "#E34F26",
+  CSS3: "#1572B6",
+  "shadcn/ui": "#FFFFFF",
+  "Lucide React": "#F5F6F8",
+  GSAP: "#88CE02",
+  "@gsap/react": "#88CE02",
+  "Three.js": "#F5F6F8",
+  Supabase: "#3ECF8E",
+  PostgreSQL: "#4169E1",
+  "Drizzle ORM": "#C5F74F",
+  Vercel: "#F5F6F8",
+  Sharp: "#99CC00",
+  SWR: "#000000",
+  Git: "#F05032",
+  GitHub: "#F5F6F8",
+  Figma: "#F24E1E",
+  Canva: "#00C4CC",
+};
