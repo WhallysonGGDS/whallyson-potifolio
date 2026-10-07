@@ -1,19 +1,38 @@
-# App template
+# Whallyson Gabriel — Portfólio / Currículo virtual
 
-Runable copies this Bun and Turborepo project into each new sandbox.
+Meu site pessoal: quem sou, stack, processo de trabalho e contato. Direção visual escura, editorial e cinematográfica, com um único azul elétrico de destaque.
 
-The root package commands are the external contract:
+🔗 **Ao vivo:** [whallyson-of-web.vercel.app](https://whallyson-of-web.vercel.app)
 
-- `bun run dev` starts the web app.
-- `bun run dev:desktop` and `bun run dev:mobile` start platform clients.
-- `bun run build` builds every package.
-- `bun run start` starts or restarts the production server.
-- `bun run stop` stops the production server.
-- `bun run lint` and `bun run typecheck` validate the project.
-- The `db:generate`, `db:migrate`, and `db:push` commands manage the database.
+## Stack
 
-Deployment tools depend on these command names. Their implementations may change, but the names must remain stable.
+**Front-end:** React · TypeScript · Vite · Tailwind CSS 4 · GSAP + ScrollTrigger · Motion · TanStack Query · React Hook Form · Zod · wouter
+**Back-end:** Hono · oRPC · Drizzle ORM · libSQL
+**Monorepo:** Bun · Turborepo
 
-The web package owns the API, database, and shared web interface. The mobile package is an Expo client. The desktop package is an Electron shell around the web app. Services use the fixed ports defined in `__ports.cjs`, and the web health endpoint is `/api/health`.
+## Destaques
 
-Secrets belong in the root `.env` file. Browser values must use the `VITE_` prefix. Commands prefixed with `internal:` are for template maintenance.
+- **Design system documentado** em [`design.md`](./design.md): paleta, tipografia (Manrope + Inter Tight), grid assimétrico e regras de motion
+- Reveals de texto com Motion e progressão ligada ao scroll com GSAP na seção Processo
+- Respeita `prefers-reduced-motion` (hook `use-reduced-motion`)
+- API tipada de ponta a ponta com oRPC + TanStack Query
+- Seções como componentes: Hero, About, Stack, Process, Contact, Status Panel
+
+## Estrutura
+
+```
+packages/web/src/web/   front-end (páginas, componentes, hooks, queries)
+packages/web/src/api/   API (Hono + oRPC) e banco (Drizzle)
+design.md               design system do site
+```
+
+## Rodar localmente
+
+```bash
+bun install
+bun run dev
+```
+
+---
+
+**Whallyson Gabriel Garcia da Silva** · Desenvolvedor Front-end · [LinkedIn](https://www.linkedin.com/in/whallyson-gabriel-garcia-da-silva-914765235) · whallysongab@gmail.com
