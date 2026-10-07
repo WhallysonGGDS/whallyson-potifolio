@@ -6,9 +6,9 @@ Meu site pessoal: quem sou, stack, processo de trabalho e contato. Direção vis
 
 ## Stack
 
-**Front-end:** React · TypeScript · Vite · Tailwind CSS 4 · GSAP + ScrollTrigger · Motion · TanStack Query · React Hook Form · Zod · wouter
-**Back-end:** Hono · oRPC · Drizzle ORM · libSQL
-**Monorepo:** Bun · Turborepo
+- **Front-end:** React · TypeScript · Vite · Tailwind CSS 4 · GSAP + ScrollTrigger · Motion · TanStack Query · React Hook Form · Zod · wouter
+- **Back-end:** Hono · oRPC · Drizzle ORM · libSQL
+- **Monorepo:** Bun · Turborepo
 
 ## Destaques
 
